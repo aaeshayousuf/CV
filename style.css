@@ -1,0 +1,77 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header{
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.cv_body{
+    position: relative;
+    left: 18%;
+    bottom: 0;
+    font-size: 18px;
+}
+
+header{
+    text-align: center;
+}
+
+.personal{
+    text-align: left;
+}
+
+h3{
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+}
+
+h3::after{
+    content: "";
+    flex: 1 1;
+    margin: auto;
+    border-bottom: 1px solid;
+}
+
+.body{
+    max-width: 700px;
+    text-align: left;
+}
+
+@media screen and (max-width: 768px){
+    .body{
+        max-width: 500px;
+    }
+
+   .cv_body{
+    position: relative;
+    left: 12%;
+    bottom: 0;
+    font-size: 14px;
+   }
+}
+
+@media screen and (max-width: 420px){
+    header{
+        font-size: 10px;
+    }
+    .body{
+        max-width: 100px;
+    }
+
+   .cv_body{
+    position: relative;
+    left: 10%;
+    bottom: 0;
+    font-size: 12px;
+   }
+}
